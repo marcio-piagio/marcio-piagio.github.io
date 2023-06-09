@@ -3,7 +3,7 @@
   Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
   Author: BootstrapMade.com
   License: https://bootstrapmade.com/license/
-*/
+
 
 /*======================================
 //--//-->   STYLES GENERALES
@@ -148,13 +148,14 @@ a:hover {
 }
 
 .title-a {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .subtitle-a {
-  color: #4e4e4e;
+  color: #fff;
 }
 
 .line-mf {
@@ -263,6 +264,31 @@ a:hover {
   box-shadow: 0 0 0 10px #be3131;
   display: block;
 }
+
+.ico-circle-top{ 
+  transition: all .5s;
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1;
+  margin: 0 auto;
+  text-align: center;
+  border: 10px solid transparent;
+  display: block;
+}
+.ico-circle-top:hover{
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px #be3131;
+  display: block;
+}
+
 
 /*------/ Owl Carousel /------*/
 
@@ -670,7 +696,22 @@ a:hover {
 /*======================================
 //--//-->   ABOUT
 ======================================*/
+.zoom{
+  transition: all 0.5s;
+  cursor: pointer;
+}
 
+.zoom:hover{
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.img-cir {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1262,4 +1303,44 @@ footer .credits a {
   .back-to-top {
     bottom: 15px;
   }
+}
+
+.button {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #be3131;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 14px;
+  width: 150px;
+  transition: all 0.9s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.9s;
+}
+
+.button span:after {
+  content: 'CV';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -100px;
+  transition: 0.9s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
