@@ -1308,39 +1308,38 @@ footer .credits a {
 .button {
   display: inline-block;
   border-radius: 10px;
-  background-color: #be3131;
+  background-color: black;
   border: none;
   color: #FFFFFF;
   text-align: center;
   font-size: 14px;
-  padding: 14px;
-  width: 150px;
-  transition: all 0.9s;
-  cursor: pointer;
-  margin: 10px;
+  width: 113px;
+  height: 30px;
+  /* transition: all 0.9s; */
+  /* cursor: pointer; */
 }
 
-.button span {
+/* .button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.9s;
-}
+} */
 
-.button span:after {
+/* .button span:after {
   content: 'CV';
   position: absolute;
   opacity: 0;
   top: 0;
   right: -100px;
   transition: 0.9s;
-}
+} */
 
-.button:hover span {
+/* .button:hover span {
   padding-right: 25px;
 }
 
 .button:hover span:after {
   opacity: 1;
   right: 0;
-}
+} */
