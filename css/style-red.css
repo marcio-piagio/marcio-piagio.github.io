@@ -731,7 +731,7 @@ a:hover {
 
 .skill-mf .progress {
   background-color: #f5dcdc;
-  margin: .5rem 0 1.2rem 0;
+  margin: 0.4rem 0 3rem 0;
   border-radius: 0;
   height: .7rem;
 }
@@ -1343,3 +1343,9 @@ footer .credits a {
   opacity: 1;
   right: 0;
 } */
+
+#chart {
+  padding: 0;
+  max-width: 420px;
+  margin: 35px auto;
+}

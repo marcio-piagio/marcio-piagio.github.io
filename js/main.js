@@ -115,3 +115,71 @@
 	});
 
 })(jQuery);
+
+window.Promise ||
+document.write(
+  '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+)
+window.Promise ||
+document.write(
+  '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+)
+window.Promise ||
+document.write(
+  '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+)
+
+
+var _seed = 42;
+Math.random = function() {
+  _seed = _seed * 16807 % 2147483647;
+  return (_seed - 1) / 2147483646;
+};
+
+new Vue({
+	el: '#app',
+	components: {
+	  apexchart: VueApexCharts,
+	},
+	data: {
+	  
+	  series: [15, 40, 5, 30, 10],
+	  chartOptions: {
+		chart: {
+		  width: '100%',
+		  type: 'pie',
+		},
+		labels: ["Programação", "Análise Estatística","Business Intelligence", "Análise de Dados","Web Design"],
+		theme: {
+		  monochrome: {
+			enabled: true,
+			color: '#9c0d0d',
+			shadeTo: 'light',
+			shadeIntensity: 0.8
+		  }
+		},
+		plotOptions: {
+		  pie: {
+			dataLabels: {
+			  offset: -5
+			}
+		  }
+		},
+		title: {
+		  text: "INTERESSES"
+		},
+		dataLabels: {
+		  formatter(val, opts) {
+			const name = opts.w.globals.labels[opts.seriesIndex]
+			return [val.toFixed(1) + '%']
+		  }
+		},
+		legend: {
+		  show: true
+		}
+	  },
+	  
+	  
+	},
+	
+  })
