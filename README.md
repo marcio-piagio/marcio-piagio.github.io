@@ -1,14 +1,7 @@
----
-title: "Vinaque sanguine metuenti cuiquam Alcyone fixus"
-author: [Author Name]
-date: "2017-02-20"
-subject: "Markdown"
-keywords: [Markdown, Example]
-subtitle: "Aesculeae domus vincemur et Veneris adsuetus lapsum"
-lang: "en"
-page-background: "backgrounds/background1.pdf"
-...
+# my-curriculum
 
 
+Link : https://marcio-piagio.github.io/my-curriculum/
 
-[contributor guide index](https://marcio-piagio.github.io/Portfolio/abelhas/abelhas.html).
+<a href="https://awesome-github-readme-profile.netlify.app"><img src="https://raw.githubusercontent.com/elangosundar/awesome-README-templates/master/awesome-github-profile.png" alt="Awesome README Templates" /></a>
+
