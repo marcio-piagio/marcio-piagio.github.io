@@ -166,7 +166,7 @@ new Vue({
 		  }
 		},
 		title: {
-		  text: "INTERESSES"
+		  text: "INTERESSESINTERESSE PROFISSIONAL"
 		},
 		dataLabels: {
 		  formatter(val, opts) {
