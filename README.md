@@ -1,4 +1,4 @@
-<h1 align="center">Meu site pessoa</h1>
+<h1 align="center">Meu site pessoal</h1>
 
 Link : https://marcio-piagio.github.io/my-curriculum/
 
