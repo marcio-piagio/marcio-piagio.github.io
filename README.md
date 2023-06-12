@@ -2,5 +2,5 @@
 
 Link : https://marcio-piagio.github.io/my-curriculum/
 
-<a href="https://marcio-piagio.github.io/my-curriculum/"><img src="https://marcio-piagio.github.io/my-curriculum/img/intro-bg.jpg" alt="Mue site pessoa" /></a>
+<a href="https://marcio-piagio.github.io/my-curriculum/"><img src="https://marcio-piagio.github.io/my-curriculum/img/capa.png" alt="Mue site pessoa" /></a>
 
