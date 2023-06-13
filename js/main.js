@@ -143,7 +143,7 @@ new Vue({
 	},
 	data: {
 	  
-	  series: [15, 40, 5, 30, 10],
+	  series: [30, 30, 5, 25, 10],
 	  chartOptions: {
 		chart: {
 		  width: '100%',
@@ -166,7 +166,7 @@ new Vue({
 		  }
 		},
 		title: {
-		  text: "INTERESSESINTERESSE PROFISSIONAL"
+		  text: "INTERESSES PROFISSIONAL"
 		},
 		dataLabels: {
 		  formatter(val, opts) {

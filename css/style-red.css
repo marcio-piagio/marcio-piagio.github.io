@@ -12,6 +12,7 @@
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
+  overflow-x:hidden;
 }
 
 h1,
@@ -694,16 +695,46 @@ a:hover {
 }
 
 /*======================================
-//--//-->   ABOUT
+//--//-->   animate
 ======================================*/
 .zoom{
   transition: all 0.5s;
   cursor: pointer;
 }
 
+.animate__animated.animate__heartBeat {
+  --animate-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__zoomInDown {
+  --animate-duration: 3s;
+}
+
+.roda{
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.roda:hover{
+  -webkit-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+
 .zoom:hover{
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
+}
+
+.zoom2{
+  transition: all 1.5s;
+  cursor: pointer;
+}
+.zoom2:hover{
+  -webkit-filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+  -webkit-transform: rotateZ(-360deg) scale(1.5);
+  transform: rotateZ(-360deg) scale(1.5);
 }
 
 .img-cir {
@@ -712,6 +743,10 @@ a:hover {
   width: 150px;
   height: 150px;
 }
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -719,6 +754,10 @@ a:hover {
 
 .about-mf .about-img {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-mf .about-img img {
@@ -1349,3 +1388,4 @@ footer .credits a {
   max-width: 420px;
   margin: 35px auto;
 }
+
