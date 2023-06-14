@@ -223,7 +223,7 @@ plotOptions: {
 		borderRadius: 5,
 		dataLabels: {
 			enabled: true,
-			format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+			format: '<b>{point.name}</b>'
 		}
 	}
 },
