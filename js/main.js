@@ -166,7 +166,7 @@ new Vue({
 		  }
 		},
 		title: {
-		  text: "INTERESSES PROFISSIONAL"
+		  text: "INTERESSE PROFISSIONAL"
 		},
 		dataLabels: {
 		  formatter(val, opts) {
@@ -183,3 +183,70 @@ new Vue({
 	},
 	
   })
+
+
+  // Data retrieved from https://netmarketshare.com/
+// Make monochrome colors
+const colors = Highcharts.getOptions().colors.map((c, i) =>
+// Start out with a darkened base color (negative brighten), and end
+// up with a much brighter color
+Highcharts.color(Highcharts.getOptions().colors[3])
+	.brighten((i - 3) / 7)
+	.get()
+);
+
+// Data retrieved from https://netmarketshare.com
+Highcharts.chart('container', {
+chart: {
+	plotBackgroundColor: null,
+	plotBorderWidth: null,
+	plotShadow: false,
+	type: 'pie'
+},
+title: {
+	text: 'INTERESSE PROFISSIONAL',
+	align: 'center'
+},
+tooltip: {
+	pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+},
+accessibility: {
+	point: {
+		valueSuffix: '%'
+	}
+},
+plotOptions: {
+	pie: {
+		allowPointSelect: true,
+		cursor: 'pointer',
+		colors,
+		borderRadius: 5,
+		dataLabels: {
+			enabled: true,
+			format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+		}
+	}
+},
+series: [{
+	name: 'Interesse',
+	colorByPoint: true,
+	data: [{
+		name: 'Programação',
+		y: 30,
+		sliced: true,
+		selected: true
+	}, {
+		name: 'Análise Estatística',
+		y: 30
+	},  {
+		name: 'Business Intelligence',
+		y: 5
+	}, {
+		name: 'Análise de Dados',
+		y: 25
+	}, {
+		name: 'Web Design',
+		y: 10
+	}]
+}]
+});
