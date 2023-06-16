@@ -698,7 +698,7 @@ a:hover {
 //--//-->   animate
 ======================================*/
 .zoom{
-  transition: all 0.5s;
+  transition: all 1.2s;
   cursor: pointer;
 }
 
@@ -722,8 +722,8 @@ a:hover {
 }
 
 .zoom:hover{
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .zoom2{
