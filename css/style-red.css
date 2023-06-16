@@ -777,7 +777,7 @@ a:hover {
 
 .skill-mf .progress .progress-bar {
   height: .7rem;
-  background-color: #be3131;
+  background-color: #970d0d;
 }
 
 /*======================================
@@ -1436,3 +1436,9 @@ input[type="number"] {
     min-width: 50px;
 }
 
+
+.row {
+
+  margin: 0px;
+
+}
