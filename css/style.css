@@ -40,6 +40,7 @@ a:hover {
   color: #f5f5f5;
 }
 
+
 .color-text-a {
   color: #4e4e4e;
 }
@@ -84,7 +85,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #be3131;
+  background-color: black;
 }
 
 .overlay-mf {
@@ -508,6 +509,7 @@ a:hover {
   transform: rotate(-135deg);
   opacity: 0.9;
 }
+
 /*======================================
 //--//-->   INTRO
 ======================================*/
@@ -624,7 +626,8 @@ a:hover {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
-  margin-bottom: 3rem;
+  margin: 1rem;
+  
 }
 
 .service-box:hover .ico-circle {
@@ -648,7 +651,6 @@ a:hover {
   font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
-  padding: .4rem 0;
 }
 
 .service-box .s-description {
@@ -829,7 +831,7 @@ footer {
   text-align: center;
   color: #fff;
   padding-bottom: 1rem;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.575);
 }
 
 footer .copyright {
@@ -884,7 +886,7 @@ footer .credits a {
 .zoom2{
   transition: all 1s;
   cursor: pointer;
-  color: blue;
+  color: rgba(61, 61, 230, 0.842);
 }
 .zoom2:hover{
   color: #9c0d0d;
@@ -959,5 +961,24 @@ input[type="number"] {
   font-size: 30px;
   padding-left: 10px;
   
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0a0a0a7a;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #7e1010;;
+  border-radius: 10px;
 }
 
