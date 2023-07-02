@@ -1,9 +1,18 @@
+:root {
+
+  --cor0: #0c035c;
+  --cor1: #4334ca;
+  --cor2: black;
+
+
+}
+
 /*======================================
 //--//-->   STYLES GENERALES
 ======================================*/
 
 body {
-  background-color: #f5f5f5;
+  background-color: var(--cor2);
   color: #4e4e4e;
   overflow-x:hidden;
 }
@@ -23,7 +32,7 @@ a {
 }
 
 a:hover {
-  color: #be3131;
+  color: var(--cor1);
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -33,7 +42,7 @@ a:hover {
 }
 
 .color-a {
-  color: #be3131;
+  color: var(--cor1);
 }
 
 .color-d {
@@ -68,6 +77,7 @@ a:hover {
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.1;
+  font-variant: small-caps;
 }
 
 .avatar {
@@ -122,7 +132,7 @@ a:hover {
 }
 
 .sect-pt4 {
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .sect-mt4 {
@@ -157,7 +167,7 @@ a:hover {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #be3131;
+  background-color: var(--cor1);
   margin: 0 auto;
 }
 
@@ -176,7 +186,7 @@ a:hover {
   content: '';
   position: absolute;
   height: 3px;
-  background-color: #be3131;
+  background-color: var(--cor1);
   width: 100px;
   bottom: -12px;
 }
@@ -215,7 +225,7 @@ a:hover {
 }
 
 .list-ico span {
-  color: #be3131;
+  color: var(--cor1);
   margin-right: 10px;
 }
 
@@ -229,7 +239,7 @@ a:hover {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #be3131;
+  box-shadow: 0 0 0 10px var(--cor1);
   display: block;
 }
 
@@ -254,7 +264,7 @@ a:hover {
   line-height: 1;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0px 0px 0px 10px #be3131;
+  box-shadow: 0px 0px 0px 10px var(--cor1);
   display: block;
 }
 
@@ -270,7 +280,7 @@ a:hover {
   position: fixed;
   width: 42px;
   height: 42px;
-  background-color: #be3131;
+  background-color: var(--cor1);
   opacity: .7;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -289,7 +299,7 @@ a:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #7e1010;
+  background: var(--cor0);
   color: #fff;
   width: 44px;
   height: 44px;
@@ -395,26 +405,26 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #be3131;
+  color: var(--cor0);
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #be3131;
+  background-color: var(--cor0);
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #be3131;
+  color: var(--cor0);
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #be3131;
+  color: var(--cor0);
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #be3131;
+  color: var(--cor0);
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -446,13 +456,13 @@ a:hover {
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-  background-color: #be3131;
+  background-color: var(--cor1);
   color: #fff;
   transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item.active {
-  background-color: #be3131;
+  background-color: var(--cor1);
 }
 
 /*--/ Hamburger Navbar /--*/
@@ -541,11 +551,13 @@ a:hover {
   color: #fff;
   font-weight: 600;
   font-size: 3rem;
+  font-variant: small-caps;
 }
 
 .intro .intro-subtitle {
   font-size: 1.5rem;
   font-weight: 300;
+  font-variant: small-caps;
 }
 
 .intro .text-slider-items {
@@ -567,7 +579,7 @@ a:hover {
 
 .intro-single .breadcrumb {
   background-color: transparent;
-  color: #be3131;
+  color: var(--cor1);
 }
 
 .intro-single .breadcrumb .breadcrumb-item:before {
@@ -586,12 +598,12 @@ a:hover {
 //--//-->   ABOUT
 ======================================*/
 .about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .about-mf .about-img {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -599,7 +611,9 @@ a:hover {
 }
 
 .about-mf .about-img img {
-  margin-left: 10px;
+    max-width:200px;
+    width: auto;
+    height: auto;
 }
 
 .skill-mf span {
@@ -615,7 +629,7 @@ a:hover {
 
 .skill-mf .progress .progress-bar {
   height: .7rem;
-  background-color: #970d0d;
+  background-color: var(--cor0);
 }
 
 /*======================================
@@ -633,7 +647,7 @@ a:hover {
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color: #be3131;
+  background-color: var(--cor1);
   box-shadow: 0 0 0 10px #f5dcdc;
 }
 
@@ -690,7 +704,7 @@ a:hover {
   background-color: black;
   color: #fff;
   display: inline-block;
-  padding: .3rem .6rem;
+  padding: .5rem 1rem;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -709,13 +723,13 @@ a:hover {
 }
 
 .button:hover {
-  background-color: #9c0d0d;
+  background-color: var(--cor0);
   color: #fff;
   transition: all 500ms ease;
 }
 
 .button-a {
-  background-color: #be3131;
+  background-color: var(--cor1);
   color: #fff;
   border-color: #f5dcdc;
 }
@@ -831,7 +845,7 @@ footer {
   text-align: center;
   color: #fff;
   padding-bottom: 1rem;
-  background-color: rgba(0, 0, 0, 0.575);
+  background-color: black;
 }
 
 footer .copyright {
@@ -860,12 +874,12 @@ footer .credits a {
 }
 
 .animate__animated.animate__heartBeat {
-  --animate-duration: 3s;
+  --animate-duration: 4s;
   animation-iteration-count: infinite;
 }
 
-.animate__animated.animate__zoomInDown {
-  --animate-duration: 3s;
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 2s;
 }
 
 .roda{
@@ -889,7 +903,7 @@ footer .credits a {
   color: rgba(61, 61, 230, 0.842);
 }
 .zoom2:hover{
-  color: #9c0d0d;
+  color: var(--cor0);
 }
 
 .img-cir {
@@ -951,8 +965,8 @@ input[type="number"] {
 
 
 .row {
-
   margin: 0px;
+  padding: 0;
 
 }
 
@@ -978,7 +992,20 @@ input[type="number"] {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #7e1010;;
+  background-color: var(--cor0);
   border-radius: 10px;
+}
+
+.center {
+  padding-top: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.center2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 

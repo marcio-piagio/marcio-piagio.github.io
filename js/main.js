@@ -190,7 +190,7 @@ new Vue({
 const colors = Highcharts.getOptions().colors.map((c, i) =>
 // Start out with a darkened base color (negative brighten), and end
 // up with a much brighter color
-Highcharts.color(Highcharts.getOptions().colors[3])
+Highcharts.color(Highcharts.getOptions().colors[1])
 	.brighten((i - 3) / 7)
 	.get()
 );
