@@ -3,6 +3,7 @@
   --cor0: #0c035c;
   --cor1: #4334ca;
   --cor2: black;
+  --cor3: #4334ca48;
 
 
 }
@@ -621,7 +622,7 @@ a:hover {
 }
 
 .skill-mf .progress {
-  background-color: #f5dcdc;
+  background-color: var(--cor3);
   margin: 0.4rem 0 3rem 0;
   border-radius: 0;
   height: .7rem;

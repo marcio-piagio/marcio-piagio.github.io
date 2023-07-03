@@ -152,7 +152,7 @@ new Vue({
 		labels: ["Programação", "Análise Estatística","Business Intelligence", "Análise de Dados","Web Design"],
 		theme: {
 		  monochrome: {
-			enabled: true,
+			enabled: false,
 			color: '#9c0d0d',
 			shadeTo: 'light',
 			shadeIntensity: 0.8
@@ -217,10 +217,10 @@ accessibility: {
 },
 plotOptions: {
 	pie: {
-		allowPointSelect: true,
+		allowPointSelect: false,
 		cursor: 'pointer',
 		colors,
-		borderRadius: 5,
+		borderRadius: 0,
 		dataLabels: {
 			enabled: true,
 			format: '<b>{point.name}</b>'
@@ -233,8 +233,8 @@ series: [{
 	data: [{
 		name: 'Programação',
 		y: 30,
-		sliced: true,
-		selected: true
+		sliced: false,
+		selected: false,
 	}, {
 		name: 'Análise Estatística',
 		y: 30
