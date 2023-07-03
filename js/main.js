@@ -204,7 +204,7 @@ chart: {
 	type: 'pie'
 },
 title: {
-	text: 'INTERESSE PROFISSIONAL',
+	text: '',
 	align: 'center'
 },
 tooltip: {

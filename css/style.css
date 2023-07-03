@@ -181,6 +181,8 @@ a:hover {
 .title-left {
   font-size: 2rem;
   position: relative;
+  margin-bottom: 0.8em;
+  margin-top: 0.5em;
 }
 
 .title-left:before {
