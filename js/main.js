@@ -240,13 +240,10 @@ series: [{
 		y: 30
 	},  {
 		name: 'Business Intelligence',
-		y: 5
+		y: 10
 	}, {
 		name: 'Análise de Dados',
-		y: 25
-	}, {
-		name: 'Web Design',
-		y: 10
+		y: 30
 	}]
 }]
 });
