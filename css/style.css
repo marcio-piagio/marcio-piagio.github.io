@@ -1,8 +1,8 @@
 :root {
 
   --cor0: #0c035c;
-  --cor1: #4334ca;
-  --cor2: black;
+  --cor1: #4141f8;
+  --cor2: #4141f8;
   --cor3: #4334ca48;
 
 
@@ -312,7 +312,7 @@ a:hover {
   border-radius: 50%;
   right: 15px;
   bottom: 15px;
-  transition: background 0.5s;
+  transition:  0.5s;
   z-index: 11;
 }
 
@@ -848,9 +848,20 @@ footer {
   text-align: center;
   color: #fff;
   padding-bottom: 1rem;
-  background-color: black;
+  background-color: black; 
+  background-image: url(../img/intro-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 0;
+  box-shadow:  5px 5px 20px 10px black;
 }
 
+
+ #temafooter {
+  background-color: black; 
+  opacity: 0.8;
+  padding-bottom: 30px;
+ }
 footer .copyright {
   margin-bottom: .3rem;
 }
@@ -865,6 +876,7 @@ footer .credits a {
 
 .footer-paralax {
   padding: 4rem 0 0 0;
+  box-shadow:  0px 0px 15px 10px rgba(0, 0, 0, 0.438);
 }
 
 
@@ -1011,4 +1023,6 @@ input[type="number"] {
   justify-content: center;
   align-items: center;
 }
+
+
 

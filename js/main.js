@@ -185,65 +185,53 @@ new Vue({
   })
 
 
-  // Data retrieved from https://netmarketshare.com/
-// Make monochrome colors
-const colors = Highcharts.getOptions().colors.map((c, i) =>
-// Start out with a darkened base color (negative brighten), and end
-// up with a much brighter color
-Highcharts.color(Highcharts.getOptions().colors[1])
-	.brighten((i - 3) / 7)
-	.get()
-);
-
-// Data retrieved from https://netmarketshare.com
+// Data retrieved from https://worldpopulationreview.com/country-rankings/countries-by-density
 Highcharts.chart('container', {
-chart: {
-	plotBackgroundColor: null,
-	plotBorderWidth: null,
-	plotShadow: false,
-	type: 'pie'
-},
-title: {
-	text: '',
-	align: 'center'
-},
-tooltip: {
-	pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-},
-accessibility: {
-	point: {
-		valueSuffix: '%'
-	}
-},
-plotOptions: {
-	pie: {
-		allowPointSelect: false,
-		cursor: 'pointer',
-		colors,
-		borderRadius: 0,
-		dataLabels: {
-			enabled: true,
-			format: '<b>{point.name}</b>'
-		}
-	}
-},
-series: [{
-	name: 'Interesse',
-	colorByPoint: true,
-	data: [{
-		name: 'Programação',
-		y: 30,
-		sliced: false,
-		selected: false,
-	}, {
-		name: 'Análise Estatística',
-		y: 30
-	},  {
-		name: 'Business Intelligence',
-		y: 10
-	}, {
-		name: 'Análise de Dados',
-		y: 30
-	}]
-}]
+    chart: {
+        type: 'variablepie'
+    },
+    title: {
+        text: '',
+        align: 'left'
+    },
+    tooltip: {
+        headerFormat: '',
+        pointFormat: '<span style="color:{point.color}">\u25CF</span> <b> {point.name}</b><br/>' +
+            'Interesse: <b>{point.y} %</b><br/>' 
+			// +
+            // 'Population density (people per square km): <b>{point.z}</b><br/>'
+    },
+    series: [{
+        minPointSize: 50,
+        innerSize: '30%',
+        zMin: 10,
+        name: 'countries',
+        borderRadius: 5,
+        data: [{
+            name: 'Programação',
+            y: 30,
+            // z: 50
+        }, {
+            name: 'Analise de dados',
+            y: 30,
+            // z: 100
+        }, {
+            name: 'Análise Estatística',
+            y: 30,
+            // z: 150
+        }, {
+            name: 'Business Intelligence',
+            y: 10,
+            // z: 200
+        }],
+        colors: [
+            '#000066',
+            '#0000cc',
+            '#3333ff',
+            '#9999ff',
+            '#0ff3a0',
+            '#00e887',
+            '#23e274'
+        ]
+    }]
 });
