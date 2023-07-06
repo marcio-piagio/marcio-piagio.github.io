@@ -2,7 +2,7 @@
 
   --cor0: #0c035c;
   --cor1: #4141f8;
-  --cor2: #4141f8;
+  --cor2: black;
   --cor3: #4334ca48;
 
 
@@ -14,6 +14,7 @@
 
 body {
   background-color: var(--cor2);
+  background-image: url(../img/fundo2.jpg);
   color: #4e4e4e;
   overflow-x:hidden;
 }
@@ -847,7 +848,7 @@ a:hover {
 footer {
   text-align: center;
   color: #fff;
-  padding-bottom: 1rem;
+  padding: 0.5;
   background-color: black; 
   background-image: url(../img/intro-bg.jpg);
   background-attachment: fixed;
@@ -860,7 +861,7 @@ footer {
  #temafooter {
   background-color: black; 
   opacity: 0.8;
-  padding-bottom: 30px;
+  padding: 10px;
  }
 footer .copyright {
   margin-bottom: .3rem;
