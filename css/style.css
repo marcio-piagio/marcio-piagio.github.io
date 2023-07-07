@@ -619,6 +619,7 @@ a:hover {
     max-width:200px;
     width: auto;
     height: auto;
+    margin-right: 40px;
 }
 
 .skill-mf span {
@@ -706,7 +707,7 @@ a:hover {
 ======================================*/
 
 .button {
-  background-color: black;
+  background-color: var(--cor1);
   color: #fff;
   display: inline-block;
   padding: .5rem 1rem;
@@ -890,8 +891,8 @@ footer .credits a {
   cursor: pointer;
 }
 
-.animate__animated.animate__heartBeat {
-  --animate-duration: 4s;
+.animate__animated.animate__headShake {
+  --animate-duration: 3s;
   animation-iteration-count: infinite;
 }
 
@@ -927,6 +928,8 @@ footer .credits a {
   object-fit: cover;
   border-radius: 50%;
   padding: auto;
+  padding-right: 10px ;
+  padding-top: 10px;
 }
 
 #chart {
