@@ -306,14 +306,14 @@ a:hover {
   display: none;
   background: var(--cor0);
   color: #fff;
-  width: 44px;
-  height: 44px;
+  width: 120px;
+  height: 50px;
   text-align: center;
   line-height: 1;
-  font-size: 16px;
-  border-radius: 50%;
-  right: 15px;
-  bottom: 15px;
+  font-size: 10px;
+  /* border-radius: 50%; */
+  right: 20px;
+  bottom: 20px;
   transition:  0.5s;
   z-index: 11;
 }
