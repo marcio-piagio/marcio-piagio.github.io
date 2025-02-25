@@ -154,16 +154,6 @@ a:hover {
 
 .title-box {
   margin-bottom: 4rem;
-  font-family: "Satoshi", Sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  text-transform: uppercase;
-  line-height: 1.5em;
-  fill: #000000;
-  color: #000000;
-  background-color: transparent;
-  background-image: linear-gradient(90deg, #00FF5F 0%, #69FFA1 100%);
-  box-shadow: 0px 2.38px 46.47px 0px #00FF5F;
 }
 
 .title-a {
@@ -659,10 +649,11 @@ a:hover {
 ======================================*/
 
 .service-box {
-  background-color: #fff;
+  background-color: transparent;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin: 0 1em 3em 1em;
+  box-shadow: 0px 2.38px 46.47px 0px #00FF5F;
 }
 
 .service-box:hover .ico-circle {
