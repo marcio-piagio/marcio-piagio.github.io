@@ -712,7 +712,8 @@ a:hover {
 ======================================*/
 
 .button {
-  background-color: var(--cor0);
+  background-color: transparent;
+  background-image: var(--cor0);
   color: #fff;
   display: inline-block;
   padding: .5rem 1rem;
