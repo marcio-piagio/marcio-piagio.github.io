@@ -237,17 +237,17 @@ a:hover {
 /*------/ Ico Circle /------*/
 
 .ico-circle {
-  height: 100px;
-  width: 100px;
-  font-size: 2rem;
-  border-radius: 50%;
-  line-height: 1.55;
-  margin: 0 auto;
-  text-align: center;
-  /*box-shadow: 0 0 0 10px var(--cor1);*/
-  background-color: #fff;
-  background-image: linear-gradient(90deg, #00FF5F 0%, #69FFA1 100%);
-  display: block;
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px var(--cor1);
+    background-color: #004085;
+    display: block;
 }
 
 .ico-circle-top{ 
@@ -655,16 +655,14 @@ a:hover {
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin: 0 1em 3em 1em;
-  box-shadow: 0px 2.38px 46.47px 0px #00FF5F;
+  box-shadow: 0px 2.38px 46.47px 0px #fff;
 }
 
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
-  color: #fff;
-  /*background-color: var(--cor1);*/
-  background-color: transparent;
-  background-image: linear-gradient(90deg, #00FF5F 0%, #69FFA1 100%);
-  box-shadow: 0 0 0 10px #f5dcdc;
+  color: #004085;
+    background-color: #fff;
+    box-shadow: 0 0 0 10px var(--cor1);
 }
 
 .service-box .service-ico {
@@ -684,7 +682,7 @@ a:hover {
 }
 
 .service-box .s-description {
-  color: #4e4e4e;
+    color: #fff;
 }
 
 /*======================================
@@ -940,13 +938,14 @@ footer .credits a {
   transform: scale(1.1);
 }
 
-.zoom2{
-  transition: all 1s;
-  cursor: pointer;
-  color: rgba(61, 61, 230, 0.842);
+.zoom2 {
+    transition: all 1s;
+    cursor: pointer;
+    color: #fff;
 }
+
 .zoom2:hover{
-  color: var(--cor0);
+  color: var(--cor1);
 }
 
 .img-cir {
